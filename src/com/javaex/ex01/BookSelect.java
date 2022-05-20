@@ -29,7 +29,7 @@ public class BookSelect {
 			query += " select  book_id, ";
 			query += "		   title, ";
 			query += "		   pubs, ";
-			query += "		   b.pubs_date, ";
+			query += "		   to_char(pubs_date, 'YYYY-MM-DD'), ";
 			query += "		   author_id ";
 			query += " from book ";
 		
